@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
-    @FindBy(css = ".error-message-container")
+    @FindBy(xpath = "//*[@data-test='error']")
     public WebElement loginMessageContainer;
 
     @FindBy(css = "#user-name")

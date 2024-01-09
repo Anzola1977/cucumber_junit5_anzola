@@ -7,7 +7,7 @@ Feature: Login Functionality
     When user enters valid credentials
     And clicks login button
     Then main page opens
-    And it have text in footer "2023 Sauce Labs. All Rights Reserved."
+    And it have text in footer "2020 Sauce Labs. All Rights Reserved."
 
   @negative
   Scenario Outline: Negative login scenarios
@@ -18,6 +18,6 @@ Feature: Login Functionality
 
     Examples:
       | login           | password     | error_message                               |
-      | standard_user   | no_sauce     | Username and password do not match any user |
-      | locked_out_user | secret_sauce | Sorry, this user has been locked out        |
-      | standard_user   |              | Password is required                        |
+      | standard_user   | no_sauce     | Epic sadface: Username and password do not match any user in this service |
+      | locked_out_user | secret_sauce | Epic sadface: Sorry, this user has been locked out        |
+      | standard_user   |              | Epic sadface: Password is required                        |
